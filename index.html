@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lilita-one" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#2002").click(function () {
+                $("#content-2002").show();
+                $("#content-2007").hide();
+                $("#content-2022").hide();
+            });
+            $("#2007").click(function () {
+                $("#content-2002").hide();
+                $("#content-2007").show();
+                $("#content-2022").hide();
+            });
+            $("#2022").click(function () {
+                $("#content-2002").hide();
+                $("#content-2007").hide();
+                $("#content-2022").show();
+            });
+        });
+    </script>
+    <header>
+        <a href="#" class="logo"><img src="images/suruchifoodslogo.png" alt=""></a>
+        <div class="mean-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+
+    <div class="section1">
+        <div class="info">
+            <h1>Delivering pure joy through authentic regional and street food, ensuring flawless quality and absolute
+                safety.</h1>
+        </div>
+        <div class="pic">
+            <div class="outer">
+                <img src="images/chole.jpg" alt="">
+            </div>
+
+            <div class="outer2">
+                <img src="images/panipuri.jpg" alt="" id="pic2">
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <marquee behavior="" direction="">
+            <p>
+                "Suruchi" originates from India and means "Great Delight" and "Happiness."
+                Suruchi Foods aims to bring light to others' lives, reflecting the characteristics of its name.
+                The brand focuses on providing good food with an emphasis on quality, hygiene, and taste.
+                Launched in 2002, Suruchi Foods began with a partnership with Future Group, India's Largest Retail
+                Chain.
+                Starting as a small venture, by 2018, Suruchi Foods expanded to almost 60 malls across India.
+                The brand has a presence in 17 towns, showcasing its widespread reach.
+                Employing over 600 people by 2018, Suruchi Foods contributes to local employment.
+                A strategic tie-up with Future Group reflects its integration into India's largest retail chain.
+                Suruchi Foods is committed to delivering taste aligned with customer preferences.
+                The brand's journey has transformed it from a small seed to a widely recognized name in the food
+                industry.
+            </p>
+
+        </marquee>
+    </div>
+
+    <div class="section3">
+        <div class="textinfo">
+            <p class="year-content" id="content-2002">Started with single
+                snack bar Café
+                Bollywood @ Big
+                Bazaar, Pheonix
+                Mall Lower Parel.</p>
+            <p class="year-content" id="content-2007">Within 5 years
+                started 2 more
+                Brands MAXX &
+                Chatoree, for
+                Chaat & Fun Foods.</p>
+            <p class="year-content" id="content-2022">Presentin more
+                than 60 Malls & 5
+                States across India</p>
+        </div>
+        <div class="menuinfo">
+            <h3 id="2002">2002</h3>
+            <h3 id="2007">2007</h3>
+            <h3 id="2022">2022</h3>
+        </div>
+    </div>
+
+    <div class="section4">
+        <img src="images/pizza.png" alt="">
+    </div>
+
+    <div class="section5" style="height: 50px; padding-top: 100px;">
+
+    </div>
+
+    <!-- <div class="section5">
+        <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
+            alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/2560px-Swiggy_logo.svg.png"
+            alt="">
+    </div> -->
+
+    <div class="section6">
+        <div class="info">
+            <div class="sec">
+                <h1>About Us</h1>
+                <p>Launched in the year 2000 with a tie-up with Future Group (India’s largest retail Chain)
+                    Started with single snack bar “Café Bollywood” at Big Bazaar at Pheonix Mall, Lower Parel Mumbai
+                    with just 3 people.</p>
+                </br>
+                <p>
+                    The word Suruchi is originated from
+                    India. The meaning ofthe name
+                    Suruchi is Great Delight, Happiness.
+                    It means good taste.
+                </p>
+                </br>
+                <p>
+                    Suruchi brings lightto others life,
+                    same is the characteristics of
+                    Suruchi Foods. We at Suruchi Foods
+                    provide good food with quality,
+                    hygiene and taste atthe top
+                    preference.
+                </p>
+
+            </div>
+            <div class="sec">
+                <h1>Our vision</h1>
+                <p>To give people the pure joy of authentic regional & street food with utmost confidence of flawless
+                    quality and complete
+                    safety.
+                </p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="images/noodels.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mean-toggle').click(function () {
+                $('.mean-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>
